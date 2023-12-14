@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Incidents Map</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include external JavaScript file -->
+    <script src="mapscript.js" defer></script>
+
+    <!-- Define map container height and width -->
+    <style>
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+
+      table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      caption {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      /* Add styles for the container */
+      #map-container {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="pgc_Home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Container above the table -->
+    <div id="map-container">The map will be here</div>
+
+    <!-- Table for displaying data -->
+    <table>
+      <caption>
+        Live, Incident update
+      </caption>
+      <thead>
+        <tr>
+          <th>Incident Case ID</th>
+          <th>Street</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Incident Type</th>
+        </tr>
+      </thead>
+      <tbody id="data-table-body"></tbody>
+    </table>
+  </body>
+</html>

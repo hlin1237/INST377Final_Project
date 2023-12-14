@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Add custom styles for the two sides */
+      .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .left-side,
+      .right-side {
+        width: 48%; /* Adjust the width based on your design */
+      }
+
+      .box {
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="pgc_Home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <!-- Left Side - Contact Support -->
+      <div class="left-side">
+        <h2>Contact Support</h2>
+        <p>Contact our support team for assistance:</p>
+        <p>Email: support@example.com</p>
+        <!-- Add more contact details if needed -->
+
+        <!-- Content for the box on the left side -->
+        <div class="box">
+          <form
+            id="myForm"
+            action="/Users/huiminlin/Downloads/INST377 Final Project/thankyou.html"
+            method="post"
+          >
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" /><br />
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" /><br />
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required /><br />
+
+            <label for="problem">What do you need help with?:</label>
+            <textarea id="problem" name="problem" rows="5" cols="50"></textarea
+            ><br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Side - Guide and FAQ -->
+      <div class="right-side">
+        <!-- Guide on How to Use the Webpage -->
+        <h2>Guide on How to Use the Webpage</h2>
+        <p>
+          Provide instructions and guidance on how users can effectively use
+          your webpage.
+        </p>
+
+        <!-- FAQ Section -->
+        <h2>FAQ</h2>
+        <!-- Add frequently asked questions and answers here -->
+        <p><strong>Q: What is the purpose of this webpage?</strong></p>
+        <p><strong>A: Insert answer here.</strong></p>
+
+        <p><strong>Q: How can I report an incident?</strong></p>
+        <p><strong>A: Insert answer here.</strong></p>
+
+        <!-- Add more FAQ entries as needed -->
+      </div>
+    </div>
+  </body>
+</html>
